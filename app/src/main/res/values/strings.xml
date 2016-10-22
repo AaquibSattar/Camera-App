@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Camera_Bottom_Bar</string>
+
+    <string name="action_aboutUs">About Us</string>
+
+    <string name="action_terms_privacy">Terms and Conditions</string>
+
+    <string name="Heading_CallFragment">Have us call you right now.</string>
+    <string name="YourNumber_Callfragment">Enter your number here.</string>
+    <string name="CallmeButtonText">Call me now</string>
+    <string name="ServiceDescription">In case the call gets disconnection during
+                                       the conversation, we would use the number
+                         being used at the moment to contact you again.</string>
+
+
+</resources>

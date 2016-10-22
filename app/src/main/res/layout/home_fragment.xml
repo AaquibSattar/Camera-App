@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAppbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <EditText
+        android:id="@+id/yourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your name here"
+        android:layout_marginLeft="18dp"
+        android:layout_below="@+id/my_toolbar"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/phoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your telephone no."
+        android:layout_marginLeft="18dp"
+        android:layout_below="@+id/yourName"
+        android:inputType="number"/>
+
+
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="100dp"
+        android:layout_height="61.8dp"
+        android:text="Take image"
+        android:drawableRight="@drawable/ic_photo"
+        android:layout_marginLeft="18dp"
+        android:layout_below="@+id/phoneNo"/>
+
+    <Button
+        android:id="@+id/add_image_button"
+        android:layout_width="100dp"
+        android:layout_height="61.8dp"
+        android:text="use gallerry"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/phoneNo"
+        android:layout_toRightOf="@+id/camera_button"/>
+
+
+    <ImageView
+        android:id="@+id/camera_Image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/send_button"
+        android:layout_below="@+id/my_toolbar"/>
+
+    <EditText
+        android:id="@+id/commentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter comments here"
+        android:layout_above="@+id/my_toolbar_bottom"
+        android:layout_marginLeft="18dp"
+        android:layout_toLeftOf="@+id/send_button"
+        android:layout_below="@+id/camera_Image"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:inputType="text"/>
+
+    <ImageView
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        android:layout_above="@+id/my_toolbar_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+</RelativeLayout>
